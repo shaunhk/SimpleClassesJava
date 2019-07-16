@@ -22,15 +22,15 @@ public class WaterBottleTest {
     }
 
     @Test
-    public void cantDrinkPast0(){
+    public void canEmpty(){
         waterbottle.empty();
-        waterbottle.drink();
         assertEquals(0, waterbottle.getVolume());
     }
 
     @Test
-    public void canEmpty(){
+    public void cantDrinkPast0(){
         waterbottle.empty();
+        waterbottle.drink();
         assertEquals(0, waterbottle.getVolume());
     }
 
